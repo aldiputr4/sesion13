@@ -265,13 +265,13 @@ function BP()
         }
       })
       gg.clearResults()
-      gg.alert("🛡️SUKSES \n @ALDITEAM🛡")
+      gg.alert("🛡️SUKSES🛡 \n 🛡@ALDITEAM🛡")
     end--Ꮲsᴀʏᴄʜᴏ⸙
   end--Ꮲsᴀʏᴄʜᴏ⸙
 end--Ꮲsᴀʏᴄʜᴏ⸙
 
 function startBypass()
   gg.setVisible(false)
-  bypassAlert = gg.alert("вуραѕѕ", "OK", "TIDAK") if bypassAlert == 2 then BP() end
+  bypassAlert = gg.alert("вуραѕѕ", "TIDAK", "BYPASS") if bypassAlert == 2 then BP() end
 end
 startBypass()
